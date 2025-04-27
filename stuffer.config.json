@@ -1,0 +1,13 @@
+{
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0,
+    "stuff": 0
+  },
+  "urls": {
+    "none": "https://google.com"
+  },
+  "currentUrlName": "none",
+  "packageManager": "bun"
+}

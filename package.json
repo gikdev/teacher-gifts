@@ -1,0 +1,27 @@
+{
+  "name": "teacher-gifts",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "stuffer": "bun -b ./stuffer.js",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@master/css": "^2.0.0-rc.68",
+    "@master/css.vite": "^2.0.0-rc.68",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react-swc": "^3.8.0",
+    "globals": "^16.0.0",
+    "typescript": "~5.7.2",
+    "vite": "^6.3.1",
+    "vite-tsconfig-paths": "^5.1.4"
+  }
+}
