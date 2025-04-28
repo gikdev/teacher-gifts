@@ -1,4 +1,4 @@
-import { Scan } from "@phosphor-icons/react"
+import { ChatCircleDots, Gift, Scan, TelegramLogo } from "@phosphor-icons/react"
 import { useQueryState } from "nuqs"
 import { useState } from "react"
 import toast, { Toaster } from "react-hot-toast"
@@ -45,7 +45,7 @@ function LoginForm({ checkCode }: LoginFormProps) {
   return (
     <form
       onSubmit={handleSubmit}
-      className="max-w:400 p:20 flex flex-direction:column gap:20 bg:app-slate-20 color:app-slate-110 border-radius:16"
+      className="max-w:400 p:20 flex flex-direction:column gap:20 bg:app-slate-20 color:app-slate-110 border-radius:16 m:20"
     >
       <h1 className="color:app-slate-120 font:bold text:center font:40">خوش آمدید!</h1>
       <p className="text:center">کد رو وارد کرده و هدیه رو دریافت کنید! 🎁</p>
@@ -99,5 +99,50 @@ interface GiftCardProps {
 }
 
 function GiftCard({ person }: GiftCardProps) {
-  return <>سلام {person.fullName}</>
+  return (
+    <div className="max-w:400 p:20 flex flex-direction:column gap:20 bg:app-slate-20 color:app-slate-110 border-radius:16 line-h:1.5 m:20">
+      <h1 className="color:app-slate-120 font:bold text:center font:40">روز معلم مبارک! 🥳</h1>
+      <p className="text:center">
+        تقدیم به شما <strong className="text:app-amber-90">{person.fullName}</strong> عزیز 🎁
+      </p>
+
+      <div className="flex flex-direction:column gap:12">
+        {person.gifts.map((g, i) => (
+          <a
+            key={g}
+            href={g}
+            className="flex gap:8 cursor:pointer justify-content:center align-items:center bg:app-jade-90 bg:app-jade-100:hover py:8 px:16 w:full color:app-slate-120 font:bold border-radius:8"
+          >
+            <Gift size={24} />
+            <span>دریافت هدیه {(i + 1).toLocaleString("fa-IR")}</span>
+          </a>
+        ))}
+      </div>
+
+      <hr className="bg:app-slate-60 border:none h:2 m:0 p:0" />
+
+      <p className="text:center">
+        یه سری هدایای دیگه‌ای هم برای شما در نظر گرفتم که برای دریافتش فقط کافیه کلمه{" "}
+        <strong className="text:app-amber-90">«هدایا»</strong> رو توی ایتا برام ارسال کنین!
+      </p>
+
+      <div className="flex flex-direction:column gap:12">
+        <a
+          href="https://eitaa.com/wd_bahrami"
+          className="flex gap:8 cursor:pointer justify-content:center align-items:center bg:app-orange-90 bg:app-orange-100:hover py:8 px:16 w:full color:app-slate-120 font:bold border-radius:8"
+        >
+          <ChatCircleDots size={24} />
+          <span>ارسال پیام در ایتا</span>
+        </a>
+
+        <a
+          href="https://t.me/wd_bahrami"
+          className="flex gap:8 cursor:pointer justify-content:center align-items:center bg:app-blue-90 bg:app-blue-100:hover py:8 px:16 w:full color:app-slate-120 font:bold border-radius:8"
+        >
+          <TelegramLogo size={24} />
+          <span>ارسال پیام در تلگرام</span>
+        </a>
+      </div>
+    </div>
+  )
 }

@@ -11,7 +11,7 @@ export class Person {
   ) {}
 
   get fullName() {
-    return `${this.isTeacher ? "استاد" : "آقای"} ${this.name} عزیز`
+    return `${this.isTeacher ? "استاد" : "آقای"} ${this.name}`
   }
 }
 
