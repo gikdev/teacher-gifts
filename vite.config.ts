@@ -7,4 +7,5 @@ import masterCSS from '@master/css.vite'
 export default defineConfig({
   plugins: [react(), tsconfigPaths(), masterCSS({})],
   base: "/teacher-gifts/",
+  build: { outDir: "docs" }
 })

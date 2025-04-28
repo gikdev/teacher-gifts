@@ -93,9 +93,9 @@ export const people: Person[] = [
     "http://ketabrah.ir/gift/yg45i0xzeqm",
   ]),
   new Person("428", "مسیبی", false, ["http://ketabrah.ir/gift/jhvrnah0f14", ""]),
-  new Person("388", "تقوایی", true, ["/secrets.pdf", "/mindset.pdf"]),
-  new Person("255", "میرزاخانلو", true, ["/secrets.pdf", "/mindset.pdf"]),
-  new Person("486", "بهزادیان", true, ["/secrets.pdf", "/mindset.pdf"]),
+  new Person("388", "تقوایی", true, ["/teacher-gifts/secrets.pdf", "/teacher-gifts/mindset.pdf"]),
+  new Person("255", "میرزاخانلو", true, ["/teacher-gifts/secrets.pdf", "/teacher-gifts/mindset.pdf"]),
+  new Person("486", "بهزادیان", true, ["/teacher-gifts/secrets.pdf", "/teacher-gifts/mindset.pdf"]),
 ]
 
 // Mindsets:
