@@ -92,9 +92,15 @@ export const people: Person[] = [
     "http://ketabrah.ir/gift/rejvj3u4vik",
     "http://ketabrah.ir/gift/yg45i0xzeqm",
   ]),
-  new Person("428", "مسیبی", false, ["http://ketabrah.ir/gift/jhvrnah0f14", ""]),
+  new Person("428", "مسیبی", false, [
+    "http://ketabrah.ir/gift/jhvrnah0f14",
+    "http://ketabrah.ir/gift/4tcvma10vs4",
+  ]),
   new Person("388", "تقوایی", true, ["/teacher-gifts/secrets.pdf", "/teacher-gifts/mindset.pdf"]),
-  new Person("255", "میرزاخانلو", true, ["/teacher-gifts/secrets.pdf", "/teacher-gifts/mindset.pdf"]),
+  new Person("255", "میرزاخانلو", true, [
+    "/teacher-gifts/secrets.pdf",
+    "/teacher-gifts/mindset.pdf",
+  ]),
   new Person("486", "بهزادیان", true, ["/teacher-gifts/secrets.pdf", "/teacher-gifts/mindset.pdf"]),
 ]
 
@@ -118,7 +124,7 @@ export const people: Person[] = [
 // http://ketabrah.ir/gift/uekq254qnbh
 // http://ketabrah.ir/gift/a1pm3r5h0xn
 // http://ketabrah.ir/gift/yg45i0xzeqm
-// TODO: PURCHASE!
+// http://ketabrah.ir/gift/4tcvma10vs4
 
 // Secrets:
 // http://ketabrah.ir/gift/muokhbzffe1
